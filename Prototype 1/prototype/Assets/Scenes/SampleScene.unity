@@ -536,7 +536,6 @@ GameObject:
   - component: {fileID: 352563292}
   - component: {fileID: 352563291}
   - component: {fileID: 352563290}
-  - component: {fileID: 352563293}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -627,19 +626,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &352563293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 352563288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87026358028d0334ea131ccde0e662ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timePanel: {fileID: 561423538}
 --- !u!1 &407763435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,7 +1420,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -142, y: 60.2939, z: -714.4534}
-  m_LocalScale: {x: 5.383415, y: 32.300495, z: 32.300495}
+  m_LocalScale: {x: 5, y: 32, z: 32}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1451,8 +1437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3a7ba19eca6364c93922fce00c1364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalScale: {x: 0.5, y: 3, z: 3}
-  zoomedScale: {x: 0.5, y: 6, z: 6}
+  normalScale: {x: 5, y: 32, z: 32}
+  zoomedScale: {x: 5, y: 64, z: 64}
   zoomSpeed: 5
 --- !u!114 &575136678
 MonoBehaviour:
@@ -1467,7 +1453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 0}
-  highlightMaterial: {fileID: 0}
+  highlightMaterial: {fileID: 2100000, guid: 6f5382f81abe5e543b45f600e32e66a3, type: 2}
 --- !u!1 &636793331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,8 +1611,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3a7ba19eca6364c93922fce00c1364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalScale: {x: 0.5, y: 3, z: 3}
-  zoomedScale: {x: 0.5, y: 6, z: 6}
+  normalScale: {x: 5, y: 32, z: 32}
+  zoomedScale: {x: 5, y: 64, z: 64}
   zoomSpeed: 5
 --- !u!65 &650105325
 BoxCollider:
@@ -1712,7 +1698,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -142, y: 60.2939, z: -176.1151}
-  m_LocalScale: {x: 5.383415, y: 32.300495, z: 32.300495}
+  m_LocalScale: {x: 2, y: 32, z: 32}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2347,8 +2333,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3a7ba19eca6364c93922fce00c1364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalScale: {x: 0.5, y: 3, z: 3}
-  zoomedScale: {x: 0.5, y: 6, z: 6}
+  normalScale: {x: 5, y: 32, z: 32}
+  zoomedScale: {x: 5, y: 64, z: 64}
   zoomSpeed: 5
 --- !u!114 &834929385
 MonoBehaviour:
@@ -2514,6 +2500,7 @@ GameObject:
   - component: {fileID: 952543123}
   - component: {fileID: 952543122}
   - component: {fileID: 952543127}
+  - component: {fileID: 952543128}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -2533,7 +2520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58184fa05fad3994e83180058eb98d27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSpeed: 300
+  baseSpeed: 200
   mouseSensitivity: 50
   playerCamera: {fileID: 963194228}
   worldRoot: {fileID: 0}
@@ -2658,6 +2645,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &952543128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952543121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87026358028d0334ea131ccde0e662ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timePanel: {fileID: 561423538}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3500,7 +3500,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -142, y: 60.2939, z: -606.7856}
-  m_LocalScale: {x: 5.383415, y: 32.300495, z: 32.300495}
+  m_LocalScale: {x: 5, y: 32, z: 32}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3517,8 +3517,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3a7ba19eca6364c93922fce00c1364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalScale: {x: 0.5, y: 3, z: 3}
-  zoomedScale: {x: 0.5, y: 6, z: 6}
+  normalScale: {x: 5, y: 32, z: 32}
+  zoomedScale: {x: 5, y: 64, z: 64}
   zoomSpeed: 5
 --- !u!114 &1455693398
 MonoBehaviour:
@@ -3896,7 +3896,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -142, y: 60.2939, z: -499.118}
-  m_LocalScale: {x: 5.383415, y: 32.300495, z: 32.300495}
+  m_LocalScale: {x: 5, y: 32, z: 32}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3913,8 +3913,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3a7ba19eca6364c93922fce00c1364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalScale: {x: 0.5, y: 3, z: 3}
-  zoomedScale: {x: 0.5, y: 6, z: 6}
+  normalScale: {x: 5, y: 32, z: 32}
+  zoomedScale: {x: 5, y: 64, z: 64}
   zoomSpeed: 5
 --- !u!114 &1552930060
 MonoBehaviour:
@@ -4751,7 +4751,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -142, y: 60.2939, z: -283.7828}
-  m_LocalScale: {x: 5.383415, y: 32.300495, z: 32.300495}
+  m_LocalScale: {x: 5, y: 32, z: 32}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4768,8 +4768,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3a7ba19eca6364c93922fce00c1364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalScale: {x: 0.5, y: 3, z: 3}
-  zoomedScale: {x: 0.5, y: 6, z: 6}
+  normalScale: {x: 5, y: 32, z: 32}
+  zoomedScale: {x: 5, y: 64, z: 64}
   zoomSpeed: 5
 --- !u!114 &2118126618
 MonoBehaviour:
